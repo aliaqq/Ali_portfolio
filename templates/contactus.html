@@ -1,18 +1,23 @@
-<h4> Send me Message </h4>
-<form action="/message_submitted" method="post">
-<div>
-<label>Full name</label><br>
-<input type = "text" name= "full_name" placeholder="Hussain Aljubran"
-</div>
-  
-  <div>
-  <label>Email</label><br>
-  <input type = "text" name= "email" placeholder="HussainAljubran@gxyz.com"
-  </div>
+<head>
+{%include "bootstrap.html"%}
+</head>
+<body>
+   {%include "banner.html"%}
+ <h4>Send me massage</h4>
+<form action="/massage_submitted" method='post'>
+    <div class="mb-2">
+     <label>Full name</label><br>
+      <input type="text" name = 'Full_name' placeholder="Name">
+   </div>
 
-  <div>
-    <label>Message</label><br>
-    <textarea type = "text" name= "message"></textarea>
+<div class="mb-2">
+  <label>Email</label><br>
+  <input type="text" name = 'email' placeholder="exm@exm.com">
+</div>
+  <div class="mb-2">
+  <label>Massage</label><br>
+  <textarea type="text" name="Massage"></textarea>
   </div>
-  <input type ="submit">
+  <input type="submit" value="Send">
 </form>
+</body>
